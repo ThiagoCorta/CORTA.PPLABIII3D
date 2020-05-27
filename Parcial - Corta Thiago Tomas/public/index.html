@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/scripts.js" type="module" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="./img/logo.svg" alt="Logo" class="logo svg-white" />
+      <nav>
+        <a href="">Nosotros</a>
+        <a href="">Anuncios</a>
+        <a href="">Blog</a>
+        <a href="">Contacto</a>
+      </nav>
+    </header>
+    <div class="banner">
+      <img src="./img/animales.jpg" alt="Gatos" />
+    </div>
+    <div id="spinner"></div>
+    <div class="form-container">
+      <fieldset class="fieldset-container">
+        <legend>Parcial Corta Thiago Tomas</legend>
+        <form class="login-form">
+          <label for="title">Titulo</label>
+          <input type="text" placeholder="Titulo" id="titulo" />
+
+          <div class="wrapper-class">
+            <label for="radio1">Perro</label>
+            <input type="radio" name="venta" id="radio" />
+            <label for="radio2">Gato</label>
+            <input type="radio" name="venta" id="radio2" />
+          </div>
+          <label for="description">Descripcion</label>
+          <input type="text" placeholder="Descripcion" id="descripcion" />
+          <label for="price">Precio</label>
+          <input type="number" placeholder="Precio" id="precio" />
+          <label for="raza"
+            ><img src="./img/perro.svg" alt="Perrito" class="icon" /><input
+              type="text"
+              placeholder="Raza"
+              id="raza"
+          /></label>
+
+          <label for="nacimiento"
+            ><img src="./img/calendario.svg" alt="Calendario" class="icon" />
+            <input type="date" id="nacimiento"
+          /></label>
+
+          <label for="vacunado">
+            <img src="./img/vacuna.svg" alt="Vacuna" class="icon" />
+            <select name="vacuna" id="vacunado">
+              <option value="elegir">----ELEGIR----</option>
+              <option value="si">Si</option>
+              <option value="no">No</option>
+            </select>
+          </label>
+
+          <div class="wrapper-class">
+            <button type="submit" id="btnGuardar">
+              <img
+                src="./img/save.svg"
+                alt="Guardar"
+                class="button-icon svg-white"
+              />Alta
+            </button>
+            <button type="submit" id="btnModificar">Modificar</button>
+            <button type="submit" id="btnEliminar">Baja</button>
+            <button type="submit" id="btnTraer">Traer</button>
+            <button type="submit" id="btnCancelar">Cancelar</button>
+          </div>
+        </form>
+      </fieldset>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <tbody id="table"></tbody>
+      </table>
+    </div>
+    <footer>
+      <p>Todos los derechos reservados &copy</p>
+      <nav>
+        <a href="">Nosotros</a>
+        <a href="">Anuncios</a>
+        <a href="">Blog</a>
+        <a href="">Contacto</a>
+      </nav>
+    </footer>
+  </body>
+</html>
