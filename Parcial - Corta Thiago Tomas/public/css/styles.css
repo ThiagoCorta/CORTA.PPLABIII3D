@@ -63,9 +63,9 @@ body {
 
 .table-container {
   height: auto;
-  width: auto;
-  overflow: scroll;
-  white-space: nowrap;
+  width: 100%;
+  display: block;
+  overflow: auto;
   display: flex;
   justify-content: center;
 }
@@ -73,6 +73,7 @@ body {
 #table th {
   border: 1px solid #e1e1e1;
   padding: 10px;
+  position: relative;
 }
 
 #table tr:nth-child(even) {
